@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By.ByLinkText;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -27,6 +28,9 @@ public class LoginPageObjects {
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div/form/div[3]/div[2]/button")
 	public static WebElement SIGIN_BUTTON;
 	
+	@FindBy(linkText = "Britto Pvt Ltd.")
+	public static WebElement Company;
+	
 	//write actions in same page object class:
 	
 	public void enterUserName(String userName) {
@@ -40,4 +44,9 @@ public class LoginPageObjects {
 	public void clickLoginButton() {
 		SIGIN_BUTTON.click();
 	}
+	
+	public void SelectCompany() {
+		Company.click();
+	}
+	
 }

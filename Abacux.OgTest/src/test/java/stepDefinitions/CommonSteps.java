@@ -42,12 +42,12 @@ public class CommonSteps {
 		LoginPageObjects.getInstance().clickLoginButton();
 	}
 
-	@AfterStep
-	public void attachScreenShot(Scenario scenario)  {
-		if(scenario.isFailed()) {
-			byte[]screenshots= ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
-			scenario.attach(screenshots, "image/png", "errorscreen"); 
-			DriverManager.getDriver().navigate().back();
-		}
-	}	
+	//@AfterStep
+	//public void attachScreenShot(Scenario scenario)  {
+		//if(scenario.isFailed()) {
+			//byte[]screenshots= ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+			//scenario.attach(screenshots, "image/png", "errorscreen"); 
+			//DriverManager.getDriver().navigate().back();
+		//}
+	//}	
 }

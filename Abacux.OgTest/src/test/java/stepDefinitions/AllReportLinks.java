@@ -14,7 +14,7 @@ public class AllReportLinks {
 
 	@Given("Report Menu Link Verified")
 	public void report_menu_link_verified() {
-		AllMenuLinks_Page_Objects.DashboardMenu.click();
+		//AllMenuLinks_Page_Objects.DashboardMenu.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 	//Account Reports
@@ -120,9 +120,9 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.SalesInvoiceDetails.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
-	@Given("Estimate Bills Link Verified")
+	@Given("Quotes Bills Link Verified")
 	public void estimate_bills_link_verified() {
-		ReportLinks_Page_Objects.EstimateBills.click();
+		ReportLinks_Page_Objects.QuotesBills.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 	@Given("Sales Invoice Overdue Link Verified")
@@ -167,7 +167,7 @@ public class AllReportLinks {
 	}
 	@Given("Estimate to Sales Order Comparision Link Verified")
 	public void estimate_to_sales_order_comparision_link_verified() {
-		ReportLinks_Page_Objects.EstimatetoSalesOrderComparison.click();
+		ReportLinks_Page_Objects.QuotestoSalesOrderComparison.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 	@Given("Sales Order to Sales Invoice Comparision Link Verified")
@@ -207,6 +207,13 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.SalesInvoiceExtendedWarrantyReport.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
+	
+	@Given("Products Service Reports Link Verified")
+	public void products_service_reports_link_verified() throws InterruptedException {
+	   ReportLinks_Page_Objects.ProductsServiceReports.click();
+	   AllMenuLinks_Page_Objects.Report.click();
+	   Thread.sleep(2000);
+	}
 
 
 	//Products Reports:	
@@ -220,6 +227,13 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.StockReport.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
+	
+	@Given("Stock Report Multi Uoms Link Verified")
+	public void stock_report_multi_uoms_link_verified() {
+	    ReportLinks_Page_Objects.StockReportMultiUoms.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+	
 	@Given("Stock Report details view Link Verified")
 	public void stock_report_details_view_link_verified() {
 		ReportLinks_Page_Objects.StockReportdetailsview.click();
@@ -280,6 +294,19 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.ProductBasedOnSaleTypeReport.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
+	
+	@Given("Product Based Profit Report Link Verified")
+	public void product_based_profit_report_link_verified() {
+	    ReportLinks_Page_Objects.ProductBasedProfit.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+	
+	@Given("BOM Report Link Verified")
+	public void bom_report_link_verified() {
+	    ReportLinks_Page_Objects.BOMReport.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+	
 	@Given("Product Batch Based Report Link Verified")
 	public void product_batch_based_report_link_verified() {
 	    ReportLinks_Page_Objects.ProductBatchBasedReport.click();
@@ -330,6 +357,13 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.GSTR1SalesInvoice.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
+	
+	@Given("GSTR1 Detailed Link Verified")
+	public void gstr1_detailed_link_verified() {
+	    ReportLinks_Page_Objects.GSTR1Detailed.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+	
 	@Given("GSTR2 PurchaseInvoice Link Verified")
 	public void gstr2_purchase_invoice_link_verified() {
 		ReportLinks_Page_Objects.GSTR2PurchaseInvoice.click();
@@ -358,15 +392,29 @@ public class AllReportLinks {
 		ReportLinks_Page_Objects.DateBasedPurchaseSales.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
+	
+	@Given("Per Day Based Stock")
+	public void per_day_based_stock() {
+	   ReportLinks_Page_Objects.PerDayBasedStock.click();
+	   AllMenuLinks_Page_Objects.Report.click();
+	}
+
 
 	//EXPENSE REPORTS:
 
+	@Given("Expense Bill Details Link Verified")
+	public void expense_bill_details_link_verified() {
+	   ReportLinks_Page_Objects.ExpenseBillDetails.click();
+	   AllMenuLinks_Page_Objects.Report.click();
+	}
+	
+	
 	@Given("Expense Payment Report Link Verified")
 	public void expense_payment_report_link_verified() {
 		ReportLinks_Page_Objects.ExpenseReport.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
-	@Given("Indirect Expense Account Summary Link Verified")
+	@Given("Expense Summary Link Verified")
 	public void indirect_expense_account_summary_link_verified() {
 		ReportLinks_Page_Objects.ExpenseSummary.click();
 		AllMenuLinks_Page_Objects.Report.click();
@@ -405,6 +453,13 @@ public class AllReportLinks {
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 
+	@Given("Daily Wage Report Link Verified")
+	public void daily_wage_report_link_verified() {
+	    ReportLinks_Page_Objects.DailyWageReport.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+
+	
 	//PARTIES REPORT:
 
 	@Given("Parties Profiles Link Verified")
@@ -436,6 +491,12 @@ public class AllReportLinks {
 	public void daily_in_out_details_link_verified() {
 	   ReportLinks_Page_Objects.DailyIn_OutDetails.click();
 	   AllMenuLinks_Page_Objects.Report.click();
+	}
+	
+	@Given("Month In-Out Details Link Verified")
+	public void month_in_out_details_link_verified() {
+	    ReportLinks_Page_Objects.MonthInOutDetails.click();
+	    AllMenuLinks_Page_Objects.Report.click();
 	}
 
 	//SUMMARY REPORTS:
@@ -497,6 +558,23 @@ public class AllReportLinks {
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 
+	@Given("Bulk Customer Opening Balance Update link verified")
+	public void bulk_customer_opening_balance_update_link_verified() {
+	   ReportLinks_Page_Objects.BulkCustomerOpeningBalanceUpdate.click();
+	   AllMenuLinks_Page_Objects.Report.click();
+	}
+	
+	@Given("Bulk Vendor Opening Balance Update Link Verified")
+	public void bulk_vendor_opening_balance_update_link_verified() {
+		ReportLinks_Page_Objects.BulkVendorOpeningBalanceUpdate.click();
+		AllMenuLinks_Page_Objects.Report.click();
+	}
+	@Given("Bulk Product Opening Balance Update Link Verified")
+	public void bulk_product_opening_balance_update_link_verified() {
+		ReportLinks_Page_Objects.BulkProductOpeningBalanceUpdate.click();
+		AllMenuLinks_Page_Objects.Report.click();
+	}
+	
 	//TIMESHEETS
 	@Given("Timesheet Link Verified")
 	public void timesheet_link_verified() {
@@ -512,6 +590,12 @@ public class AllReportLinks {
 	@Given("Projects Reports Link Verified")
 	public void projects_reports_link_verified() {
 		ReportLinks_Page_Objects.ProjectsReports.click();
+		AllMenuLinks_Page_Objects.Report.click();
+	}
+	
+	@Given("Projects Balance Link Verified")
+	public void projects_balance_link_verified() {
+		ReportLinks_Page_Objects.ProjectsBalance.click();
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 

@@ -78,8 +78,8 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Sales Invoice - Details")
 			public static WebElement SalesInvoiceDetails;
 			
-			@FindBy(linkText = "Estimate Bills")
-			public static WebElement EstimateBills;
+			@FindBy(linkText = "Quotes Bills")
+			public static WebElement QuotesBills;
 			
 			@FindBy(linkText = "Sales Invoice Overdue")
 			public static WebElement SalesInvoiceOverdue;
@@ -105,8 +105,8 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Credit Note Report")
 			public static WebElement CreditNoteReport;
 			
-			@FindBy(linkText = "Estimate to Sales Order Comparison")
-			public static WebElement EstimatetoSalesOrderComparison;
+			@FindBy(linkText = "Quotes to Sales Order Comparison")
+			public static WebElement QuotestoSalesOrderComparison;
 			
 			@FindBy(linkText = "Sales Order to Sales Invoice Comparison")
 			public static WebElement SalesOrdertoSalesInvoiceComparison;
@@ -129,13 +129,19 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Sales Invoice Extended Warranty Report")
 			public static WebElement SalesInvoiceExtendedWarrantyReport;
 			
+			@FindBy(linkText = "Products Service Reports")
+			public static WebElement ProductsServiceReports;
+			
 		//PRODUCTS REPORTS
 			
-			@FindBy(linkText = "Inventory Valuation Summary (Stock Report)")
+			@FindBy(linkText = "Inventory Valuation Summary")
 			public static WebElement InventoryValuationSummary;
 			
 			@FindBy(linkText = "Stock Report")
 			public static WebElement StockReport;
+			
+			@FindBy(linkText = "Stock Report Multi Uoms")
+			public static WebElement StockReportMultiUoms;
 			
 			@FindBy(linkText = "Stock Report details view")
 			public static WebElement StockReportdetailsview;
@@ -176,6 +182,12 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Product Batch Based Report")
 			public static WebElement ProductBatchBasedReport;
 			
+			@FindBy(linkText = "Product Based Profit")
+			public static WebElement ProductBasedProfit;
+			
+			@FindBy(linkText = "BOM Report")
+			public static WebElement BOMReport;
+			
 			
 		//PURCHASE REPORTS:
 			
@@ -205,6 +217,9 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "GSTR1 - SalesInvoice")
 			public static WebElement GSTR1SalesInvoice;
 			
+			@FindBy(linkText = "GSTR1 - Detailed")
+			public static WebElement GSTR1Detailed;
+			
 			@FindBy(linkText = "GSTR2B - PurchaseInvoice")
 			public static WebElement GSTR2PurchaseInvoice;
 			
@@ -222,7 +237,12 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Date Based Purchase & Sales")
 			public static WebElement DateBasedPurchaseSales;
 			
+			@FindBy(linkText = "Per Day Based Stock")
+			public static WebElement PerDayBasedStock;
+			
 		//EXPENSE REPORTS:
+			@FindBy(linkText = "Expense Bill - Details")
+			public static WebElement ExpenseBillDetails;
 			
 			@FindBy(linkText = "Expense Payments Report")
 			public static WebElement ExpenseReport;
@@ -251,6 +271,9 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Employee Salary Report")
 			public static WebElement EmployeeSalaryReport;
 			
+			@FindBy(linkText = "Daily Wage Report")
+			public static WebElement DailyWageReport;
+			
 		//PARTIES REPORT:
 			
 			@FindBy(linkText = "Parties Profiles")
@@ -269,6 +292,9 @@ public class ReportLinks_Page_Objects {
 			
 			@FindBy(linkText = "Daily In-Out Details")
 			public static WebElement DailyIn_OutDetails;
+			
+			@FindBy(linkText = "Month In-Out Details")
+			public static WebElement MonthInOutDetails;
 			
 		//SUMMARY REPORTS:
 			
@@ -304,6 +330,15 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Bulk Price Update")
 			public static WebElement BulkPriceUpdate;
 			
+			@FindBy(linkText = "Bulk Customer Opening Balance Update")
+			public static WebElement BulkCustomerOpeningBalanceUpdate;
+			
+			@FindBy(linkText = "Bulk Vendor Opening Balance Update")
+			public static WebElement BulkVendorOpeningBalanceUpdate;
+			
+			@FindBy(linkText = "Bulk Product Opening Balance Update")
+			public static WebElement BulkProductOpeningBalanceUpdate;
+			
 	//TIMESHEETS
 			@FindBy(linkText = "Timesheet Report")
 			public static WebElement TimesheetReport;
@@ -312,10 +347,13 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Bank and Cash Reports")
 			public static WebElement BankandCashReports;
 			
-			@FindBy(linkText = "Projects Reports")
+			@FindBy(linkText = "Projects Balance")
+			public static WebElement ProjectsBalance;
+			
+			@FindBy(linkText = "Projects Report")
 			public static WebElement ProjectsReports;
 			
 	//Service Job Report
-			@FindBy(linkText = "Service Jobs Reports")
+			@FindBy(linkText = "Services Reports")
 			public static WebElement ServiceJobsReports;
 }
