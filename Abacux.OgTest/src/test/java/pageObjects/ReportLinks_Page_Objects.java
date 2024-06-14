@@ -279,6 +279,8 @@ public class ReportLinks_Page_Objects {
 			@FindBy(linkText = "Parties Profiles")
 			public static WebElement PartiesProfiles;
 			
+			@FindBy(linkText = "Parties Profiles Report - Details")
+			public static WebElement PartiesProfilesReportDetails;
 		//ATTENDANCE REPORT:	
 			
 			@FindBy(linkText = "Daily Attendance")

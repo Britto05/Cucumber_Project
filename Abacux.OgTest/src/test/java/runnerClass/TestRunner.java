@@ -13,12 +13,10 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		//features="src/test/resources/features/Purchase.feature",
 		glue={"stepDefinitions","hooks"}, 
 		snippets = SnippetType.CAMELCASE,
-		tags="@Tag",
+		//tags="@Tag",
 
 		dryRun = !true,
-		//dryRun = false,
 		monochrome = true,
-		//monochrome = false,
 
 		plugin = {"rerun:target/failed_scenarios.txt",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/cucumber-reports/report.html"}

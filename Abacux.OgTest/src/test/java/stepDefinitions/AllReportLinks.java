@@ -1,10 +1,16 @@
 package stepDefinitions;
 
+import static org.testng.Assert.assertTrue;
+
 import java.awt.AWTException;
-import java.awt.Robot;
+
+import javax.xml.xpath.XPath;
+
+import org.jsoup.select.Evaluator.ContainsData;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.AllMenuLinks_Page_Objects;
 import pageObjects.ReportLinks_Page_Objects;
 import webDriverManager.DriverManager;
@@ -22,6 +28,8 @@ public class AllReportLinks {
 	@Given("Balance Sheet Link Verified")
 	public void balance_sheet_link_verified() {
 		ReportLinks_Page_Objects.Balance_Sheet.click();
+		//String visibleText = DriverManager.getDriver().findElement(By.xpath("/html/body/div[2]/div[5]/div[1]/div[2]/div[1]/div/div/h2")).getText();
+		 //Assert.assertTrue(visibleText.contains("John"));
 		AllMenuLinks_Page_Objects.Report.click();
 	}
 	@Given("Profit and Loss Link Verified")
@@ -467,8 +475,15 @@ public class AllReportLinks {
 		//AllMenuLinks_Page_Objects.Report.click();
 		ReportLinks_Page_Objects.PartiesProfiles.click();
 		AllMenuLinks_Page_Objects.Report.click();
-		//Robot robot = new Robot();	
+			
 	}
+	
+	@Given("Parties Profiles Report Details Link Verified")
+	public void partiesProfilesReportDetailsLinkVerified() {
+	    ReportLinks_Page_Objects.PartiesProfilesReportDetails.click();
+	    AllMenuLinks_Page_Objects.Report.click();
+	}
+
 
 	//ATTENDANCE REPORT:
 

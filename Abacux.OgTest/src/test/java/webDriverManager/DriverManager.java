@@ -21,6 +21,7 @@ private static WebDriver driver=null; //select the driver->Right click->source->
 				WebDriverManager.chromedriver().setup();
 				driver=new ChromeDriver();
 				break;
+				
 
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();

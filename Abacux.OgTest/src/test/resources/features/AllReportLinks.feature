@@ -1,5 +1,5 @@
 Feature: Check All Reports Links
-@Tag
+
 Scenario: Verify All Links in ACCOUNT REPORTS 
  Given Report Menu Link Verified 
  Given Balance Sheet Link Verified 
@@ -100,6 +100,7 @@ Scenario: Verify All Links in EMPLOYEE REPORTS
 
 Scenario: Verify All Links in PARTIES REPORTS  
  Given Parties Profiles Link Verified
+ Given Parties Profiles Report Details Link Verified
 
 Scenario: Verify All Links in ATTENDANCE REPORTS 
  Given Daily Attendance Link Verified
